@@ -1,0 +1,17 @@
+{
+  "name": "p_web_projeto",
+  "version": "1.0.0",
+  "description": "Repositório exclusivo para o projeto da disciplina Programação Web",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^14.0.3",
+    "react": "^18.2.0"
+  }
+}
