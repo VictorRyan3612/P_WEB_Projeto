@@ -4,7 +4,7 @@ export default function Home(){
          <p>
             Hello World
          </p>
-         <a href="/r15" target="_blank"> 
+         <a href="/r15"> 
             Movies 3
          </a>
       </div>
