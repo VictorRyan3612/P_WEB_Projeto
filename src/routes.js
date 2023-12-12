@@ -5,3 +5,4 @@ const filmesController = require('./controllers/filmesControllers');
 module.exports = router
 
 router.get('/filmes', filmesController.buscarTodos)
+router.get('/filme/:imdId', filmesController.buscarUm)

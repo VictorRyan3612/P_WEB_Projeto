@@ -16,5 +16,15 @@ module.exports ={
          })
       }
       res.json(json)
+   },
+   buscarUm: async(req, res) => {
+      let json = {error: '', result:{}};
+      let imdId = req.params.imdId;
+      let filme = await filmeService.buscarUm(imdId);
+      if (filme){
+         json.result = filme
+      }
+      res.json(filme)
+      // res.json(json)
    }
 }
