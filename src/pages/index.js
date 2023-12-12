@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
+import * as react from 'react';
 import Link from 'next/link';
 
 const Index = () => {
-   const [dataMovies, setDataMovies] = useState([]);
+   const [dataMovies, setDataMovies] = react.useState([]);
 
-   useEffect(() => {
+   react.useEffect(() => {
       const fetchData = async () => {
          try {
             const response = await fetch('http://localhost:3000/api/filmes');

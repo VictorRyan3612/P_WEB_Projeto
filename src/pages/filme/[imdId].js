@@ -1,9 +1,9 @@
 import useSWR from 'swr'
-import { useRouter } from 'next/router'
-
+// import { useRouter } from 'next/router'
+import * as router from 'next/router';
 
 export default function TheMovie(){
-   const {imdId} = useRouter().query
+   const {imdId} = router.useRouter().query
    const {data, error} = useSWR(`http://localhost:3000/api/filme/${imdId}`, async (u) => {
       const res = await fetch(u)
       const json = await res.json();
