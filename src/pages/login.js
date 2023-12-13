@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Login = () => {
+const Login = ({setLoggedIn, setuserLogged}) => {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [notification, setNotification] = useState(null);
@@ -22,7 +22,11 @@ const Login = () => {
 
          const data = await response.json();
          if (response.ok) {
+            setLoggedIn(true);
+            console.log(data)
+            setuserLogged(data)
             setNotification({ type: 'success', message: 'Login bem-sucedido!' });
+
          } else {
             setNotification({ type: 'error', message: data.message || 'Credenciais inválidas. Por favor, tente novamente.' });
          }
