@@ -3,10 +3,23 @@ import React, { useState } from 'react';
 const Login = () => {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
+   const [notification, setNotification] = useState(null);
+
+   const users = [{
+      email: 'contato@gmail.com.br',
+      password: '123456'
+   }];
 
    const handleLogin = () => {
-      // Lógica de autenticação aqui
-      console.log('Usuário:', email, 'Senha:', password);
+      const isValidUser = users.some(user => user.email === email && user.password === password);
+
+      if (isValidUser) {
+         // Lógica de autenticação aqui
+         setNotification({ type: 'success', message: 'Login bem-sucedido!' });
+      } else {
+         // Indicar credenciais inválidas
+         setNotification({ type: 'error', message: 'Credenciais inválidas. Por favor, tente novamente.' });
+      }
    };
 
    return (
@@ -16,6 +29,7 @@ const Login = () => {
                Voltar
             </a>
             <h2>Login</h2>
+
             <label>
                Email:
                <input
@@ -34,11 +48,11 @@ const Login = () => {
                />
             </label>
             <br />
+            {notification && <p style={{ color: notification.type === 'success' ? 'green' : 'red' }}>{notification.message}</p>}
             <button onClick={handleLogin}>Login</button>
-
          </center>
       </div>
    );
 };
 
-export default Login
+export default Login;
