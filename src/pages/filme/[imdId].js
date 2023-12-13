@@ -25,6 +25,9 @@ export default function TheMovie(){
    return (
       <div>
          <center>
+            <a href='/'>
+               Voltar
+            </a>
             <br />
                <h2>Título: {data.title}</h2>
                <h3>Ano: {data.year}</h3>
