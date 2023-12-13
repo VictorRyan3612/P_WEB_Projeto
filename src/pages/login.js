@@ -21,7 +21,6 @@ const Login = () => {
          });
 
          const data = await response.json();
-
          if (response.ok) {
             setNotification({ type: 'success', message: 'Login bem-sucedido!' });
          } else {

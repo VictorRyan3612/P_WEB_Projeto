@@ -8,7 +8,7 @@ const routes = require('./routes');
 const server = express();
 
 server.use(cors());
-server.use(bodyparser.urlencoded({extended: false}));
+server.use(express.json());
 
 server.use('/api', routes)
 server.listen(process.env.PORT, () =>{

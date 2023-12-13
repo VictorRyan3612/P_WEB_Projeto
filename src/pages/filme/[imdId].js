@@ -12,7 +12,13 @@ export default function TheMovie(){
 
    if (error) return <div>Erro na requisição/resposta </div>
    if (!data){
-      return <div>Carregando...</div>
+      return (
+      <div>
+         <center>
+            Carregando...
+         </center>
+      </div>
+      )
    } 
    if (data.Error) return <div>Erro</div>
    console.log(data)
