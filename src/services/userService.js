@@ -2,32 +2,22 @@ const { request } = require('express');
 const db = require('../dbUsers')
 
 module.exports = {
-   buscarTodos: () =>{
-      return new Promise((aceito, rejeitado) =>{
-         db.query('SELECT * FROM users', (error, results) => {
+   buscarUsuario: (email, password) => {
+      return new Promise((resolve, reject) => {
+         db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, password], (error, results) => {
             if (error) {
-               rejeitado(error); return;
+               reject(error);
+               return;
             }
-            aceito(results)
-         })
-      })
-   },
-
-   buscarUm: (imdId) =>{
-      return new Promise ((aceito, rejeitado) =>{
-         db.query('SELECT * FROM users WHERE imdId = ?', [imdId], (error, results) =>{
-            if (error) {
-               rejeitado(error); return;
+            
+            console.log("opa")
+            if (results.length > 0) {
+               resolve(results[0]);
+            } else {
+               resolve(null);
             }
-            if (results.length > 0){
-               aceito(results[0]);
-            }
-            else{
-               // let a = results.lenght
-               // aceito(a);
-               aceito(false)
-            }
-         })
-      })
+         });
+      });
    }
+
 };

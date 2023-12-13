@@ -5,7 +5,7 @@ module.exports = {
       const { email, password } = req.body;
 
       try {
-         const user = await dbApiUsers.buscarUsuario(email, password);
+         const user = await userService.buscarUsuario(email, password);
 
          if (user) {
             return res.status(200).json(user);
