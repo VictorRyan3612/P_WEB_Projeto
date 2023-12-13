@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FilmesList from './filmeslist';
 import Login from './login'
-
+import Addfilme from './addfilme';
 const Index = () => {
    const [isLoggedIn, setLoggedIn] = useState(false);
    const [userLogged, setUserLogged] = useState({});
@@ -25,6 +25,7 @@ const Index = () => {
                   <br></br>
                   <br></br>
                   <a href='/addfilme'> Adicionar Filme</a>
+                  <Addfilme isLoggedIn={isLoggedIn}/>
                </div>
             ) : (
                <Login setLoggedIn={setLoggedIn} setUserLogged={setUserLogged} />
