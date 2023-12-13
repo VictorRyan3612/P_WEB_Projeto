@@ -4,16 +4,25 @@ import Login from './login'
 
 const Index = () => {
    const [isLoggedIn, setLoggedIn] = useState(false);
-   const [userLogged, setuserLogged] = useState({});
+   const [userLogged, setUserLogged] = useState({});
+
+   const handleLogout = () => {
+      // Defina isLoggedIn como false e redefina as informações do usuário
+      setLoggedIn(false);
+      setUserLogged({});
+   };
 
    return (
       <div>
          <center>
             <br />
             {isLoggedIn ? (
-               <p>Bem Vindo {userLogged.name}</p>
+               <div>
+                  <p>Bem Vindo {userLogged.name}</p>
+                  <button onClick={handleLogout}>Logout</button>
+               </div>
             ) : (
-               <Login setLoggedIn={setLoggedIn} setuserLogged={setuserLogged}/>
+               <Login setLoggedIn={setLoggedIn} setUserLogged={setUserLogged} />
             )}
             <FilmesList />
          </center>
