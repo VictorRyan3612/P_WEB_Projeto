@@ -6,7 +6,7 @@ const Login = () => {
    const [notification, setNotification] = useState(null);
 
    const users = [{
-      email: 'contato@gmail.com.br',
+      email: 'contato@',
       password: '123456'
    }];
 
