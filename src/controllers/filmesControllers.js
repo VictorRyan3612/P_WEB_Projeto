@@ -27,7 +27,26 @@ module.exports ={
       res.json(filme)
       // res.json(json)
    },
-   addfilme: async (req, res) =>{
-      
-   }
+   addfilme: async(req, res) => {
+      let json = {error:'', result:{}};
+      let imdId = req.body.imdId;
+      let title = req.body.title;
+      let year = req.body.year;
+      let poster = req.body.poster
+      console.log(imdId,title,year,poster)
+      if (imdId, title, year, poster){
+            let filmeCodigo = await filmeService.inserir(imdId, title, year, poster);
+            console.log(filmeCodigo)
+            json.result = {
+               imdId: imdId,
+               title: title,
+               year: year,
+               poster: poster
+            };
+         }else{
+            json.error = 'Campos não enviados';
+         }
+         res.json(json);
+   },
+
 }
