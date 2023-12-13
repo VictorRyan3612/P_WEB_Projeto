@@ -25,6 +25,9 @@ const Index = () => {
    return (
       <div>
          <center>
+            <a href='/login'>
+               Login
+            </a>
             {/* Validar se não é vazio */}
             {dataMovies &&
                dataMovies.map((m) => (
