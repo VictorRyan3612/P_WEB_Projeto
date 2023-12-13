@@ -1,46 +1,38 @@
-// import React, { useEffect, useState } from 'react';
 import * as react from 'react';
-import Link from 'next/link';
+import FilmesList from './filmeslist';
+import Login from './login'
+import Addfilme from './addfilme';
+
 
 const Index = () => {
-   const [dataMovies, setDataMovies] = react.useState([]);
+   const [isLoggedIn, setLoggedIn] = react.useState(false);
+   const [userLogged, setUserLogged] = react.useState({});
 
-   react.useEffect(() => {
-      const fetchData = async () => {
-         try {
-            const response = await fetch('http://localhost:3000/api/filmes');
-            const data = await response.json();
-
-            if (data.result) {
-               setDataMovies(data.result);
-            }
-         } catch (error) {
-            console.error('Erro ao buscar filmes:', error);
-         }
-      };
-
-      fetchData();
-   }, []);
+   const handleLogout = () => {
+      // Defina isLoggedIn como false e redefina as informações do usuário
+      setLoggedIn(false);
+      setUserLogged({});
+   };
 
    return (
       <div>
          <center>
-            {/* Validar se não é vazio */}
-            {dataMovies &&
-               dataMovies.map((m) => (
-                  <div key={m.imdId}>
-                     <br />
-                     <h2>Título: {m.title}</h2>
-                     <h3>Ano: {m.year}</h3>
-                     <Link href={`/filme/${m.imdId}`}>
-                        <img
-                           src={m.poster}
-                           width="200"
-                           alt={`Poster for ${m.title}`}
-                        />
-                     </Link>
-                  </div>
-               ))}
+            <br />
+            {isLoggedIn ? (
+               <div>
+                  <p>Bem Vindo {userLogged.name}</p>
+                  <button onClick={handleLogout}>
+                     Logout
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <a href='/addfilme'> Adicionar Filme</a>
+                  <Addfilme isLoggedIn={isLoggedIn}/>
+               </div>
+            ) : (
+               <Login setLoggedIn={setLoggedIn} setUserLogged={setUserLogged} />
+            )}
+            <FilmesList />
          </center>
       </div>
    );

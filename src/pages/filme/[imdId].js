@@ -1,5 +1,4 @@
 import useSWR from 'swr'
-// import { useRouter } from 'next/router'
 import * as router from 'next/router';
 
 export default function TheMovie(){
@@ -12,13 +11,22 @@ export default function TheMovie(){
 
    if (error) return <div>Erro na requisição/resposta </div>
    if (!data){
-      return <div>Carregando...</div>
+      return (
+      <div>
+         <center>
+            Carregando...
+         </center>
+      </div>
+      )
    } 
    if (data.Error) return <div>Erro</div>
    console.log(data)
    return (
       <div>
          <center>
+            <a href='/'>
+               Voltar
+            </a>
             <br />
                <h2>Título: {data.title}</h2>
                <h3>Ano: {data.year}</h3>

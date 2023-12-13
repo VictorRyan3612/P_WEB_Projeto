@@ -29,5 +29,18 @@ module.exports = {
             }
          })
       })
-   }
+   },
+   inserir: (imdId, title, year, poster)=> {
+      return new Promise((aceito, rejeitado)=> {
+
+         db.query('INSERT INTO filmes (imdId, title, year, poster) VALUES (?, ?, ?, ?)',
+            [imdId, title, year, poster],
+            (error, results)=>{
+               // console.log(results)
+                  if(error){ rejeitado(error); return; }
+                  aceito(results);
+            }
+         );
+      });
+   },
 };
