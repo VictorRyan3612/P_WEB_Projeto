@@ -6,12 +6,33 @@ const Addfilme = ({isLoggedIn}) =>{
    const [year, setyear] = useState('');
    const [poster, setposter] = useState('');
 
-   console.log(isLoggedIn)
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+
+      // Aqui você pode fazer a solicitação POST usando fetch ou axios
+      try {
+      const response = await fetch('http://localhost:3000/api/addfilme', {
+         method: 'POST',
+         headers: {
+            'Content-Type': 'application/json',
+         },
+         body: JSON.stringify({ imdId, title, year, poster }),
+      });
+
+      if (response.ok) {
+         console.log('Filme adicionado com sucesso!');
+      } else {
+         console.error('Erro ao adicionar filme');
+      }
+      } catch (error) {
+      console.error('Erro ao processar solicitação:', error);
+      }
+   };
    if(isLoggedIn === true){
       return (
          <div>
             <h1>Cadastro de filme</h1>
-            <form method="POST" action="http://localhost:3000/api/addfilme">
+            <form onSubmit={handleSubmit}>
 
                <label>imdId: </label>
                <input type="text" name="title" value={imdId} onChange={(e) => setimdId(e.target.value)}  size="40" maxlength="150"/>
