@@ -19,7 +19,12 @@ const Index = () => {
             {isLoggedIn ? (
                <div>
                   <p>Bem Vindo {userLogged.name}</p>
-                  <button onClick={handleLogout}>Logout</button>
+                  <button onClick={handleLogout}>
+                     Logout
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <a href='/addfilme'> Adicionar Filme</a>
                </div>
             ) : (
                <Login setLoggedIn={setLoggedIn} setUserLogged={setUserLogged} />

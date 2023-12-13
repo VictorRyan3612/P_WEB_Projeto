@@ -26,5 +26,8 @@ module.exports ={
       }
       res.json(filme)
       // res.json(json)
+   },
+   addfilme: async (req, res) =>{
+      
    }
 }
