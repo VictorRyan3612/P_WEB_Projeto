@@ -1,5 +1,4 @@
 import useSWR from 'swr'
-// import { useRouter } from 'next/router'
 import * as router from 'next/router';
 
 export default function TheMovie(){

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import * as react from  'react';
 
 const Addfilme = ({isLoggedIn}) =>{
-   const [imdId, setimdId] = useState('');
-   const [title, settitle] = useState('');
-   const [year, setyear] = useState('');
-   const [poster, setposter] = useState('');
+   const [imdId, setimdId] = react.useState('');
+   const [title, settitle] = react.useState('');
+   const [year, setyear] = react.useState('');
+   const [poster, setposter] = react.useState('');
 
    const handleSubmit = async (e) => {
       e.preventDefault();

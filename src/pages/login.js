@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import * as react from 'react';
 
 const Login = ({setLoggedIn, setuserLogged}) => {
-   const [email, setEmail] = useState('');
-   const [password, setPassword] = useState('');
-   const [notification, setNotification] = useState(null);
+   const [email, setEmail] = react.useState('');
+   const [password, setPassword] = react.useState('');
+   const [notification, setNotification] = react.useState(null);
 
    // const users = [{
    //    email: 'contato@',
