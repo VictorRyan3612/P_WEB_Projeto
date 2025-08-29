@@ -12,43 +12,92 @@
 
     {"id":7,"data":"2025-03-02","produto":"Torta de Maçã","categoria":"Comida","cliente":"Ricardo Alves","quantidade":18,"valorUnitario":8.5,"formaPagamento":"Dinheiro"},
     {"id":8,"data":"2025-03-04","produto":"Café Expresso","categoria":"Bebida","cliente":"Paula Gomes","quantidade":30,"valorUnitario":7.5,"formaPagamento":"Cartão"},
+    {"id":9,"data":"2025-03-07","produto":"Pão de Queijo","categoria":"Comida","cliente":"Mariana Duarte","quantidade":40,"valorUnitario":5.0,"formaPagamento":"Pix"},
 
-    {"id":9,"data":"2025-04-03","produto":"Cappuccino","categoria":"Bebida","cliente":"Felipe Rocha","quantidade":25,"valorUnitario":12.0,"formaPagamento":"Pix"},
-    {"id":10,"data":"2025-04-05","produto":"Croissant","categoria":"Comida","cliente":"Bianca Souza","quantidade":20,"valorUnitario":6.0,"formaPagamento":"Dinheiro"},
+    {"id":10,"data":"2025-04-03","produto":"Cappuccino","categoria":"Bebida","cliente":"Felipe Rocha","quantidade":25,"valorUnitario":12.0,"formaPagamento":"Pix"},
+    {"id":11,"data":"2025-04-05","produto":"Croissant","categoria":"Comida","cliente":"Bianca Souza","quantidade":20,"valorUnitario":6.0,"formaPagamento":"Dinheiro"},
+    {"id":12,"data":"2025-04-07","produto":"Chocolate Quente","categoria":"Bebida","cliente":"Rodrigo Silva","quantidade":28,"valorUnitario":10.0,"formaPagamento":"Cartão"},
 
-    {"id":11,"data":"2025-05-02","produto":"Mocha","categoria":"Bebida","cliente":"Henrique Castro","quantidade":22,"valorUnitario":14.0,"formaPagamento":"Cartão"},
-    {"id":12,"data":"2025-05-04","produto":"Bolo de Cenoura","categoria":"Comida","cliente":"Juliana Martins","quantidade":18,"valorUnitario":9.0,"formaPagamento":"Pix"},
+    {"id":13,"data":"2025-05-02","produto":"Mocha","categoria":"Bebida","cliente":"Henrique Castro","quantidade":22,"valorUnitario":14.0,"formaPagamento":"Cartão"},
+    {"id":14,"data":"2025-05-04","produto":"Bolo de Cenoura","categoria":"Comida","cliente":"Juliana Martins","quantidade":18,"valorUnitario":9.0,"formaPagamento":"Pix"},
+    {"id":15,"data":"2025-05-06","produto":"Muffin de Chocolate","categoria":"Comida","cliente":"Laura Fernandes","quantidade":15,"valorUnitario":7.0,"formaPagamento":"Dinheiro"},
 
-    {"id":13,"data":"2025-06-01","produto":"Café Latte","categoria":"Bebida","cliente":"Guilherme Dias","quantidade":28,"valorUnitario":11.0,"formaPagamento":"Cartão"},
-    {"id":14,"data":"2025-06-03","produto":"Torta de Maçã","categoria":"Comida","cliente":"Isabela Freire","quantidade":22,"valorUnitario":8.5,"formaPagamento":"Dinheiro"},
-    {"id":15,"data":"2025-06-05","produto":"Café Expresso","categoria":"Bebida","cliente":"Rafael Faria","quantidade":30,"valorUnitario":7.5,"formaPagamento":"Pix"}
+    {"id":16,"data":"2025-06-01","produto":"Café Latte","categoria":"Bebida","cliente":"Guilherme Dias","quantidade":28,"valorUnitario":11.0,"formaPagamento":"Cartão"},
+    {"id":17,"data":"2025-06-03","produto":"Torta de Maçã","categoria":"Comida","cliente":"Isabela Freire","quantidade":22,"valorUnitario":8.5,"formaPagamento":"Dinheiro"},
+    {"id":18,"data":"2025-06-05","produto":"Café Expresso","categoria":"Bebida","cliente":"Rafael Faria","quantidade":30,"valorUnitario":7.5,"formaPagamento":"Pix"},
+
+    {"id":19,"data":"2025-07-02","produto":"Sanduíche Natural","categoria":"Comida","cliente":"Marcelo Tavares","quantidade":25,"valorUnitario":12.0,"formaPagamento":"Cartão"},
+    {"id":20,"data":"2025-07-04","produto":"Cappuccino","categoria":"Bebida","cliente":"Camila Nunes","quantidade":20,"valorUnitario":12.0,"formaPagamento":"Pix"},
+    {"id":21,"data":"2025-07-06","produto":"Pão de Queijo","categoria":"Comida","cliente":"André Souza","quantidade":35,"valorUnitario":5.0,"formaPagamento":"Dinheiro"},
+
+    {"id":22,"data":"2025-08-03","produto":"Chocolate Quente","categoria":"Bebida","cliente":"Patrícia Ramos","quantidade":30,"valorUnitario":10.0,"formaPagamento":"Pix"},
+    {"id":23,"data":"2025-08-05","produto":"Café Expresso","categoria":"Bebida","cliente":"Bruno Almeida","quantidade":25,"valorUnitario":7.5,"formaPagamento":"Cartão"},
+    {"id":24,"data":"2025-08-07","produto":"Croissant","categoria":"Comida","cliente":"Letícia Barbosa","quantidade":18,"valorUnitario":6.0,"formaPagamento":"Dinheiro"},
+
+    {"id":25,"data":"2025-09-01","produto":"Café Latte","categoria":"Bebida","cliente":"Daniel Moreira","quantidade":32,"valorUnitario":11.0,"formaPagamento":"Cartão"},
+    {"id":26,"data":"2025-09-04","produto":"Torta de Maçã","categoria":"Comida","cliente":"Fernanda Oliveira","quantidade":20,"valorUnitario":8.5,"formaPagamento":"Pix"},
+    {"id":27,"data":"2025-09-06","produto":"Muffin de Chocolate","categoria":"Comida","cliente":"Pedro Santos","quantidade":25,"valorUnitario":7.0,"formaPagamento":"Dinheiro"},
+
+    {"id":28,"data":"2025-10-02","produto":"Mocha","categoria":"Bebida","cliente":"Carolina Mendes","quantidade":24,"valorUnitario":14.0,"formaPagamento":"Cartão"},
+    {"id":29,"data":"2025-10-04","produto":"Sanduíche Natural","categoria":"Comida","cliente":"Tiago Ferreira","quantidade":30,"valorUnitario":12.0,"formaPagamento":"Pix"},
+    {"id":30,"data":"2025-10-06","produto":"Pão de Queijo","categoria":"Comida","cliente":"Sofia Rocha","quantidade":40,"valorUnitario":5.0,"formaPagamento":"Dinheiro"},
+
+    {"id":31,"data":"2025-11-02","produto":"Cappuccino","categoria":"Bebida","cliente":"João Pedro","quantidade":28,"valorUnitario":12.0,"formaPagamento":"Pix"},
+    {"id":32,"data":"2025-11-05","produto":"Café Expresso","categoria":"Bebida","cliente":"Marina Lima","quantidade":35,"valorUnitario":7.5,"formaPagamento":"Cartão"},
+    {"id":33,"data":"2025-11-07","produto":"Bolo de Cenoura","categoria":"Comida","cliente":"Paulo Henrique","quantidade":22,"valorUnitario":9.0,"formaPagamento":"Dinheiro"},
+
+    {"id":34,"data":"2025-12-01","produto":"Chocolate Quente","categoria":"Bebida","cliente":"Alice Souza","quantidade":30,"valorUnitario":10.0,"formaPagamento":"Cartão"},
+    {"id":35,"data":"2025-12-04","produto":"Café Latte","categoria":"Bebida","cliente":"Ricardo Mendes","quantidade":28,"valorUnitario":11.0,"formaPagamento":"Pix"},
+    {"id":36,"data":"2025-12-06","produto":"Muffin de Chocolate","categoria":"Comida","cliente":"Beatriz Carvalho","quantidade":20,"valorUnitario":7.0,"formaPagamento":"Dinheiro"}
   ],
+
   "despesas": [
     {"id":1,"data":"2025-01-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":100.0,"categoria":"Matéria-prima"},
     {"id":2,"data":"2025-01-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
     {"id":3,"data":"2025-01-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
 
+    {"id":4,"data":"2025-02-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":120.0,"categoria":"Matéria-prima"},
+    {"id":5,"data":"2025-02-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":6,"data":"2025-02-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
 
-    {"id":5,"data":"2025-02-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":120.0,"categoria":"Matéria-prima"},
-    {"id":6,"data":"2025-02-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
-    {"id":7,"data":"2025-02-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
+    {"id":7,"data":"2025-03-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":80.0,"categoria":"Matéria-prima"},
+    {"id":8,"data":"2025-03-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":9,"data":"2025-03-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
 
-    {"id":9,"data":"2025-03-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":80.0,"categoria":"Matéria-prima"},
-    {"id":10,"data":"2025-03-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
-    {"id":11,"data":"2025-03-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
+    {"id":10,"data":"2025-04-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":100.0,"categoria":"Matéria-prima"},
+    {"id":11,"data":"2025-04-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":12,"data":"2025-04-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
 
-    {"id":13,"data":"2025-04-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":100.0,"categoria":"Matéria-prima"},
-    {"id":14,"data":"2025-04-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
-    {"id":15,"data":"2025-04-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
+    {"id":13,"data":"2025-05-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":90.0,"categoria":"Matéria-prima"},
+    {"id":14,"data":"2025-05-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":15,"data":"2025-05-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
 
-    {"id":17,"data":"2025-05-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":90.0,"categoria":"Matéria-prima"},
-    {"id":18,"data":"2025-05-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
-    {"id":19,"data":"2025-05-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
-    
+    {"id":16,"data":"2025-06-01","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":120.0,"categoria":"Matéria-prima"},
+    {"id":17,"data":"2025-06-02","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":18,"data":"2025-06-03","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"},
 
-    {"id":21,"data":"2025-06-01","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":120.0,"categoria":"Matéria-prima"},
-    {"id":22,"data":"2025-06-02","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
-    {"id":23,"data":"2025-06-03","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":100.0,"categoria":"Contas fixas"}
-    
+    {"id":19,"data":"2025-07-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":110.0,"categoria":"Matéria-prima"},
+    {"id":20,"data":"2025-07-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":21,"data":"2025-07-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":110.0,"categoria":"Contas fixas"},
+
+    {"id":22,"data":"2025-08-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":130.0,"categoria":"Matéria-prima"},
+    {"id":23,"data":"2025-08-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":24,"data":"2025-08-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":115.0,"categoria":"Contas fixas"},
+
+    {"id":25,"data":"2025-09-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":95.0,"categoria":"Matéria-prima"},
+    {"id":26,"data":"2025-09-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":27,"data":"2025-09-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":105.0,"categoria":"Contas fixas"},
+
+    {"id":28,"data":"2025-10-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":125.0,"categoria":"Matéria-prima"},
+    {"id":29,"data":"2025-10-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":30,"data":"2025-10-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":110.0,"categoria":"Contas fixas"},
+
+    {"id":31,"data":"2025-11-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":100.0,"categoria":"Matéria-prima"},
+    {"id":32,"data":"2025-11-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":33,"data":"2025-11-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":120.0,"categoria":"Contas fixas"},
+
+    {"id":34,"data":"2025-12-02","descricao":"Compra de grãos e alimentos","fornecedor":"Torrefação & Padaria","valor":135.0,"categoria":"Matéria-prima"},
+    {"id":35,"data":"2025-12-03","descricao":"Aluguel do ponto","fornecedor":"Imobiliária Centro","valor":300.0,"categoria":"Aluguel"},
+    {"id":36,"data":"2025-12-04","descricao":"Energia elétrica","fornecedor":"Companhia de Energia","valor":125.0,"categoria":"Contas fixas"}
   ]
 }
